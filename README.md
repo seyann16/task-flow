@@ -1,1 +1,24 @@
-🚧 Currently under heavy construction — expect bugs, chaos, and maybe enlightenment by October 7, 2025! 🛠️
+ # Task List Manager
+
+Perfect! Let's build this step by step. We'll create a full-featured task management system with real-time updates.
+
+🎯 **Project Overview**
+
+**Title:** Interactive Task List Manager
+
+**Description:** A dynamic task management system with real-time CRUD operations
+
+**Core Features:** Add, view, edit, delete, and mark tasks as complete
+
+📚 **Learning Goals**
+
+- Advanced CRUD operations (Create, Read, Update, Delete)
+- PHP prepared statements for security
+- JavaScript DOM manipulation
+- AJAX for real-time updates
+- Front-end form validation
+- Responsive UI/UX design
+
+---
+
+🚧 This project is under construction. 🛠️
