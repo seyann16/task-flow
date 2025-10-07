@@ -7,7 +7,15 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager - <?php echo htmlspecialchars($pageTitle ?? 'Dashboard'); ?></title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/actions.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/tasks.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
@@ -42,6 +50,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
                 </div>
             </div>
         </header>
-    <main class="main-content">
-        <!-- Flash messages container -->
-        <div id="flashMessages" class="flash-messages"></div>
+        <main class="main-content">
+            <!-- Flash messages container -->
+            <div id="flashMessages" class="flash-messages"></div>
