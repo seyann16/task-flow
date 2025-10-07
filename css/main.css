@@ -1,0 +1,59 @@
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    pading: 2rem;
+    width: 100%;
+}
+
+/* Flash Messages */
+.flash-messages {
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    z-index: 1000;
+    max-width: 400px;
+}
+
+.flash-message {
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-lg);
+    border-left: 4px solid;
+    animation: slideInRight 0.3s ease;
+}
+
+.flash-success {
+    background: #d1fae5;
+    border-left-color: var(--success-color);
+    color: #065f46;
+}
+
+[data-theme="dark"] .flash-success {
+    background: #064e3b;
+    color: #a7f3d0;
+}
+
+.flash-error {
+    background: #fee2e2;
+    border-left-color: var(--error-color);
+    color: #991b1b;
+}
+
+[data-theme="dark"] .flash-error {
+    background: #7f1d1d;
+    color: #fca5a5;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
