@@ -1,6 +1,11 @@
 <?php
 session_start();
-header('Content-Type: application/json; charset=utf-8');
+// Set content type depending on request (AJAX requests get JSON)
+if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest') {
+    header('Content-Type: application/json; charset=utf-8');
+} else {
+    header('Content-Type: text/html; charset=utf-8');
+}
 
 // Security headers
 header("X-Frame-Options: DENY");
