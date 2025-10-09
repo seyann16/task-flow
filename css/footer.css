@@ -1,0 +1,8 @@
+.footer {
+    position: sticky;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    opacity: 0.8;
+    font-size: 0.9rem;
+    text-align: right;
+}

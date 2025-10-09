@@ -46,7 +46,7 @@ class TaskManager {
             }
 
             // Search term
-            if (isset($filter['search']) && !empty($filters['search'])) {
+            if (isset($filters['search']) && !empty($filters['search'])) {
                 $whereClause .= "AND (title LIKE ? OR description LIKE ?)";
                 $searchTerm = "%{$filters['search']}%";
                 $params[] = $searchTerm;
@@ -134,7 +134,7 @@ class TaskManager {
             $query = "SELECT COUNT(*) as total,
                       SUM(CASE WHEN status = 'completed' THEN 1 ELSE 0 END) as completed,
                       SUM(CASE WHEN status = 'pending' THEN 1 ELSE 0 END) as pending,
-                      SUM(CASE WHEN priority = 'high' AND status = 'pending' THEN 1 ELSE 0 END) as high_priority
+                      SUM(CASE WHEN priority = 'high' AND status = 'pending' THEN 1 ELSE 0 END) as `high_priority`
                       FROM tasks WHERE is_deleted = 0";
             $stmt = $this->pdo->query($query);
             return $stmt->fetch();

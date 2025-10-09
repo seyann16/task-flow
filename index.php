@@ -108,7 +108,7 @@ include 'includes/header.php';
                         <div class="empty-state">
                             <i class="fas fa-clipboard-list empty-icon"></i>
                             <h3>No tasks found</h3>
-                            <p>Get started by creating your firs task!</p>
+                            <p>Get started by creating your first task!</p>
                             <button class="btn btn-primary" id="emptyAddTaskBtn">
                                 <i class="fas fa-plus"></i>
                                 Add Your First Task

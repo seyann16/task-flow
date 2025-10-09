@@ -16,6 +16,12 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/tasks.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
