@@ -1,4 +1,3 @@
-
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -52,4 +51,14 @@
 .btn-icon: hover {
     background: var(--bg-secondary);
     color: var(--text-primary);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    transform: translateY(-1px);
 }
