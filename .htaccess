@@ -1,0 +1,15 @@
+# Prevent direct access to API files
+<Files "*.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# Security headers
+Header always set X-Content-Type-Options nosniff
+Header always set X-Frame-Options DENY
+Header always set X-XSS-Protection "1; mode=block"
+
+# CORS for API
+Header always set Access-Control-Allow-Origin "*"
+Header always set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+Header always set Access-Control-Allow-Headers "X-Requested-With, Content-Type, Authorization"
