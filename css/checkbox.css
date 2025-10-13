@@ -39,7 +39,12 @@
     font-weight: 500;
 }
 
-.checkbox-container input[type="checkbox"]:checked ~ .status-label {
+.checkbox-container input[type="checkbox"]:checked + .status-label {
     color: var(--success-color);
     text-decoration: line-through;
+}
+
+.checkbox-container input[type="checkbox"]:disabled + .checkmark {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
