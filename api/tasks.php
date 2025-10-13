@@ -1,6 +1,6 @@
 <?php
 require_once '../includes/config.php';
-require_once '../inlcudes/TaskManager.php';
+require_once '../includes/TaskManager.php';
 
 header('Content-Type: application/json');
 
@@ -35,6 +35,12 @@ try {
                 'message' => 'Method not allowed'
             ]);
     }
+} catch (Exception $error) { 
+    http_response_code(500);
+    echo json_encode([
+        'success' => false,
+        'message' => "Server error: " . $error->getMessage()
+    ]);
 }
 
 function handleGetRequest($taskManager) {
@@ -44,7 +50,7 @@ function handleGetRequest($taskManager) {
         // Get single task
         $query = "SELECT * FROM tasks WHERE id = ? AND is_deleted = 0";
         $stmt = $taskManager->getConnection()->prepare($query);
-        $stmt->exucute([$taskId]);
+        $stmt->execute([$taskId]);
         $task = $stmt->fetch();
 
         if ($task) {
