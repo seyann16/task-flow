@@ -47,7 +47,7 @@ class TaskManager {
 
             // Search term
             if (isset($filters['search']) && !empty($filters['search'])) {
-                $whereClause .= "AND (title LIKE ? OR description LIKE ?)";
+                $whereClause .= " AND (title LIKE ? OR description LIKE ?)";
                 $searchTerm = "%{$filters['search']}%";
                 $params[] = $searchTerm;
                 $params[] = $searchTerm;
@@ -142,6 +142,10 @@ class TaskManager {
             error_log("Get statistics error: " . $e->getMessage());
             return null;
         }
+    }
+
+    public function getConnection() {
+        return $this->pdo;
     }
 }
 ?>
