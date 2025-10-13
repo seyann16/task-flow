@@ -20,6 +20,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/analytics.css">
+    <link rel="stylesheet" href="css/charts.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -39,7 +41,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                         <i class="fas fa-home"></i>
                         <span>Dashboard</span>
                     </a>
-                    <a href="analytics.php" class="nav-link <?php echo $current_page === 'analytics.php' ? 'active' : '';?>">
+                    <a href="dashboard.php" class="nav-link <?php echo $current_page === 'analytics.php' ? 'active' : '';?>">
                         <i class="fas fa-chart-bar"></i>
                         <span>Analytics</span>
                     </a>
