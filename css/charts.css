@@ -1,0 +1,72 @@
+.chart-container {
+    position: relative;
+    height: 300px;
+    max-height: 400px;
+    min-height: 200px;
+}
+
+.insights-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.insight-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    transition: transform 0.2s ease;
+}
+
+.insight-item:hover {
+    transform: translateX(5px);
+}
+
+.insight-icon {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    height: 30px;
+    border-radius: var(--radius-md);
+}
+
+.insight-icon.high-priority {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.insight-icon.completed {
+    background: #d1fae5;
+    color: #059669;
+}
+
+.insight-icon.pending {
+    background: #fef3c7;
+    color: #d98806;
+}
+
+.insight-icon.achievement {
+    background: #e0e7ff;
+    color: #6366f1;
+}
+
+.insight-content {
+    flex: 1;
+}
+
+.insight-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.insight-label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
